@@ -7,10 +7,17 @@
             </figure>
         </div>
         <div class="nav-center">
-            <ul>
-                @foreach ($pages as $page)    
-                    <li> <a href="#"> {{ $page }} </a> </li>
-                @endforeach
+            <ul>    
+                    <li> <a href="#"> Characters </a> </li>
+                    <li> <a href="{{ route('comics.index') }}"> Comics </a> </li>
+                    <li> <a href="#"> Movie </a> </li>
+                    <li> <a href="#"> Tv </a> </li>
+                    <li> <a href="#"> Games </a> </li>
+                    <li> <a href="#"> Collectibles</a> </li>
+                    <li> <a href="#"> Videos</a> </li>
+                    <li> <a href="#"> Fans </a> </li>
+                    <li> <a href="#"> News </a> </li>
+                    <li> <a href="#"> Shop </a> </li>
             </ul>
         </div>
         <div class="nav-right">
