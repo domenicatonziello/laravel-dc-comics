@@ -10,7 +10,7 @@
                     <figure>
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}">
                     </figure>
-                    <figcaption> {{ $comic['series'] }} </figcaption>
+                    <figcaption> <a href="{{ route('comics.show', $comic)}}"> {{ $comic['series'] }} </a> </figcaption>
                 </div>
             @endforeach
         </div>
