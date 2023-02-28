@@ -9,7 +9,7 @@
         <div class="nav-center">
             <ul>    
                     <li> <a href="#"> Characters </a> </li>
-                    <li> <a href="{{ route('comics.index') }}"> Comics </a> </li>
+                    <li class="{{ request()->routeIs('comics*') ? 'active' : ''  }}"> <a href="{{ route('comics.index') }}"> Comics </a> </li>
                     <li> <a href="#"> Movie </a> </li>
                     <li> <a href="#"> Tv </a> </li>
                     <li> <a href="#"> Games </a> </li>
