@@ -10,9 +10,12 @@
                     <figure>
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}">
                     </figure>
-                    <figcaption> <a href="{{ route('comics.show', $comic)}}"> {{ $comic['series'] }} </a> </figcaption>
+                    <figcaption> <a href="{{ route('comics.show', $comic->id)}}"> {{ $comic['series'] }} </a> </figcaption>
                 </div>
             @endforeach
+        </div>
+        <div class="text-center">
+            <a href="{{route('comics.create')}}" class="btn"> Aggiungi </a>
         </div>
     </section>
     <!-- main bottom -->
