@@ -16,9 +16,17 @@ header {
 
     .nav-left {
         flex-basis: 25%;
+        height: 100%;
+
+        a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
 
         img {
-            max-width: 50%;
+            width: 50%;
             display: block;
         }
     }
@@ -34,7 +42,9 @@ header {
             height: 100%;
 
             li {
-                padding: 10px;
+                height: 100%;
+                line-height: 80px;
+                margin: 0 10px;
 
                 &.active {
                     color: rgb(2, 130, 249);
@@ -51,12 +61,13 @@ header {
 
     .nav-right {
         flex-basis: 25%;
+        text-align: end;
 
         input {
             border: none;
             border-bottom: 2px solid dodgerblue;
             text-align: right;
-            width: 150px;
+            width: 100px;
         }
     }
 }

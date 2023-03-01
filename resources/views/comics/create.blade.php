@@ -41,6 +41,9 @@
                 <textarea name="writers" id="writers" class="form-control" cols="120" rows="5"></textarea>
             </div>    
             <button type="submit" class="btn"> Invia </button>
+            <button type="button" class="btn">
+                <a href="{{route('comics.index')}}"> Indietro </a>
+            </button>
         </form>
     </section>
 @endsection

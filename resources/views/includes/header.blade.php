@@ -2,9 +2,9 @@
     <div class="info"></div>
     <div class="container navbar">
         <div class="nav-left">
-            <figure>
+            <a href="{{route('home')}}">
                 <img src="{{ asset('dc-logo.png') }}" alt="Logo">
-            </figure>
+            </a>
         </div>
         <div class="nav-center">
             <ul>    
