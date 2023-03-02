@@ -2,6 +2,15 @@
 
 @section('content')
 <section id="form" class="container">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form  method="POST" action="{{ route('comics.update', $comic->id) }}" class="row">
         @method('PUT')
         @csrf
