@@ -73,5 +73,13 @@
                 </ul>
             </div>
         </div>
+        <div class="container d-flex">
+            <a class="btn" href="{{route('comics.edit', $comic->id)}}"> Modifica </a>
+            <form method="POST" action="{{route('comics.destroy', $comic->id)}}">
+                @method('DELETE')
+                @csrf
+                <button type="submit" class="btn btn-destroy">Elimina</button>
+            </form>
+        </div>
     </section>    
 @endsection

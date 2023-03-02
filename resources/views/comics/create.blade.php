@@ -39,11 +39,9 @@
             <div class="col-12" class="form-label">
                 <label for="writers">Scrittori</label>
                 <textarea name="writers" id="writers" class="form-control" cols="120" rows="5"></textarea>
-            </div>    
+            </div>   
             <button type="submit" class="btn"> Invia </button>
-            <button type="button" class="btn">
-                <a href="{{route('comics.index')}}"> Indietro </a>
-            </button>
+            <a class="btn" href="{{route('comics.index')}}"> Indietro </a>    
         </form>
     </section>
 @endsection
