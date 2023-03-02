@@ -47,6 +47,16 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required|string',
+            'series' => 'required|string',
+            'thumb' => 'url'
+        ], [
+            'title.required' => "il campo 'Titolo' è obbligatorio.",
+            'series.required' => "il campo 'Serie' è obbligatorio.",
+            'thumb.url' => 'L\'immagine deve avere un URL valido.'
+        ]);
+
         $data = $request->all();
 
         // creo nuova istanza

@@ -28,3 +28,16 @@
 .btn-destroy {
     background-color: red;
 }
+
+.alert {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.alert-danger {
+    background-color: rgba(255, 157, 157, 0.669);
+    color: rgb(117, 0, 0);
+}
